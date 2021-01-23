@@ -22,7 +22,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     
     while True:
-      city=str(input("\n Please specify a city to start (Chicago, New York City, Washington) \n"))
+      city=str(input("\n Please specify a city to start from the following list (Chicago, New York City, Washington) \n"))
       if city.lower() in cities:
         break
       else:
