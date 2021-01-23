@@ -40,11 +40,11 @@ def get_filters():
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
       day=str(input(" \n Please specify a day of the week or type all for all days \n"))
-      if day.lower() in days:
-        break
-      else:
+      if day.lower() not in days:
         print("Wrong Entry!. Please Try Again!")
         continue
+      else:
+        break
 
     print('-'*40)
     return city, month, day
