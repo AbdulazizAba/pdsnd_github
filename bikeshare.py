@@ -23,11 +23,11 @@ def get_filters():
     
     while True:
       city=str(input("\n Please specify a city to start (Chicago, New York City, Washington) \n"))
-      if city.lower() in cities:
-        break
-      else:
+      if city.lower() not in cities:
         print("Wrong Entry!. Please Try Again")
         continue
+      else:
+        break
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:
       month=str(input("\n Please specify a month during January - June ,or type all for the whole period\n"))
